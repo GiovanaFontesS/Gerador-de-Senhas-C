@@ -13,16 +13,20 @@ void gerarSenha(int tamanho,
 {
     char caracteres[100] = "";
     char senha[100];
-
+  
+//LETRAS MAIUSCULAS
     if (maiusculas)
         strcat(caracteres, "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-
+  
+//LETRAS MINUSCULAS
     if (minusculas)
         strcat(caracteres, "abcdefghijklmnopqrstuvwxyz");
-
+  
+// NUMEROS
     if (numeros)
         strcat(caracteres, "0123456789");
-
+  
+// SIMBOLOS
     if (simbolos)
         strcat(caracteres, "!@#$%&*+-=?");
 
@@ -44,7 +48,7 @@ void gerarSenha(int tamanho,
 
     senha[tamanho] = '\0';
 
-    printf("\n=====================================\n");
+
     printf("Senha gerada: %s\n", senha);
-    printf("=====================================\n");
+
 }
