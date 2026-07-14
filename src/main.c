@@ -49,7 +49,7 @@ int main()
         scanf("%d", &continuar);
     }
 
-    printf("\nObrigado por utilizar o Gerador de Senhas!\n");
+    printf("\nObrigado!\n");
 
     return 0;
 }
